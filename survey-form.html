@@ -1,0 +1,114 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="wrapper">
+        <div class="title">
+        Survey Form
+        </div>
+      
+      <!--form starts here-->
+      <div class="form" action="#" method="post">
+        <div class="inputfield">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" class="input" placeholder="Enter your name" required>
+        </div> 
+
+        <div class="inputfield">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" class="input" placeholder="Enter your email" pattern=".+@beststartupever.com" required>
+        </div>  
+
+        <div class="inputfield">
+          <label for="number" id="number-label">Your semester</label>
+          <input type="number" class="input" placeholder="Your sem" min="1" max="10">
+        </div> 
+
+        <!--Dropdown starts here-->
+        <div class="inputfield">
+          <label for="dropdown">In which college you are?</label>
+          <div class="custom_select">
+            <select id="dropdown">
+              <option value="">Select an option</option>
+              <option value="Abes IT">Abes IT</option>
+              <option value="Abes EC">Abes EC</option>
+              <option value="AKG">AKG</option>
+              <option value="KIET">KIET</option>
+              <option value="SRM">SRM</option>
+            </select>
+          </div>
+        </div> 
+        <!--Dropdown ends here-->
+
+        <!--Radio button starts here-->
+        <div class="inputfield">
+          <label for="Gender">Gender</label>
+            <input type="radio" name="gender" value="male" checked>Male&nbsp; &nbsp;
+            <input type="radio" name="gender" value="female">Female&nbsp; &nbsp;
+            <input type="radio" name="gender" value="other">other
+        </div> 
+        <!--Radio button ends here-->
+    
+        <!--Checkbox starts here-->
+        <div class="inputfield">
+          <label for="Techs">Technologies:</label>
+        </div>
+        <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>front-end</p>
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Back-end</p>
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Java</p>
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Rust</p>
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Devops</p>
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Quality Assurance</p>
+          
+        </div>
+        <!--checkbox ends here-->
+
+        <!--text area starts here-->
+        <div class="inputfield">
+          <label for="comments">Any Suggestions?</label>
+          <textarea class="textarea"></textarea>
+        </div> 
+        <!--text area ends here-->
+
+        <!-- submit button starts here-->
+        <div class="inputfield">
+          <input type="submit" value="Submit" name="Submit" class="btn">
+        </div>
+        <!--submit button ends here-->
+        
+      <!--form ends here-->
+      </div> 
+    </div>
+  </body>
+  </html>
